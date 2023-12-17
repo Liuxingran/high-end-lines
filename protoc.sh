@@ -1,0 +1,1 @@
+protoc --go_out=./internal/grpc/proto/proto_go --go-grpc_out=./internal/grpc/proto/proto_go internal/grpc/proto/*proto

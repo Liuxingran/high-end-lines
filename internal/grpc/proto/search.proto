@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option go_package = ".";
+
+service SearchService {
+  rpc Search(SearchRequest) returns(SearchResponse);
+}
+
+message Result {
+  string url = 1;
+  string title = 2;
+  repeated string snippets = 3;
+}
+
+message SearchResponse {
+  repeated Result results = 1;
+}
+
+message SearchRequest {
+  string query = 1;
+  int32 page_num = 2;
+  int32 page_size = 3;
+  enum Corpus {
+    Universal = 0;
+    Web = 1;
+    Images = 2;
+    Local = 3;
+  }
+  Corpus corpus = 4;
+}
