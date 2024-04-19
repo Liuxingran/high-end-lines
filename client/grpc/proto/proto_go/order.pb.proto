@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package grpcpub.billinggrpc.proto;
+
+option go_package = "git.zhwenxue.com/zhgo/grpcpub/billinggrpc";
+option java_multiple_files = true;
+option java_package = "com.zongheng.billing.remote.AutoBuyRemote";
+option java_outer_classname = "AutoBuyRemote";
+
+}
+}
+}
+}

@@ -182,7 +182,7 @@ Usage: protoc [OPTION] PROTO_FILES
 最新版：
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 指定版本：
-o install google.golang.org/protobuf/cmd/protoc-gen-go@v1.3.0
+go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.3.0
 ```
 
 生成代码命令

@@ -207,6 +207,7 @@ func main() {
 		if err == io.EOF {
 			break
 		}
+
 		log.Println("Combined shipment : ", combinedShipment.OrderList)
 	}
 }

@@ -5,7 +5,6 @@ import (
 	pb "high-end-lines/internal/grpc/proto/proto_go"
 	"io"
 	"log"
-	"time"
 )
 
 var _ pb.SearchServiceServer = &SearchServiceImpl{}
@@ -17,7 +16,7 @@ type OrderServiceImpl struct {
 }
 
 func (s *OrderServiceImpl) ProcessOrders(stream pb.OrderManagement_ProcessOrdersServer) error {
-	time.Sleep(4 * time.Second)
+	//time.Sleep(4 * time.Second)
 	batchMarker := 1
 	var combinedShipmentMap = make(map[string]pb.CombinedShipment)
 	for {
